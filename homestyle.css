@@ -1,3 +1,34 @@
 body {
+max-width: 3000px;
+}
+
+.info_content {
+  text-decoration: line-through;
+}
+
+.boldandbbrash {
+  text-decoration: underline;
+}
+
+#allcaps {
+  text-transform: uppercase;
+  color: red
+}
+
+#shadow {
+  text-shadow: 4px 4px 5px red;
+}
+
+#boruxu {
+  color: red;
+
+  width: 700px;
+  height: 65px;
+  margin: 12px;
+  padding: 5px;
+  border: 2px solid black;
+  background-color: #E6E6E6;
+
+}
 
 }
