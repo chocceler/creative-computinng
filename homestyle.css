@@ -1,5 +1,5 @@
 body {
-max-width: 1500px;
+max-width: 2500px;
 }
 
 /*#grid-container{
@@ -17,7 +17,7 @@ max-width: 1500px;
 
 #grid-container{
   display: grid;
-grid-template-columns: repeat(12, 1fr);
+grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
   grid-auto-rows: minmax(200px, auto);
   color: white;
@@ -70,6 +70,23 @@ grid-template-columns: repeat(12, 1fr);
 
 .poster:hover {
   background-color: #0ECA14;
+}
+
+@media (max width: 400px){
+#grid-container{ background-color: red;
+border-radius: 10px}
+
+@@media only screen
+and (device-width: 375px)
+and (device-height: 812px)
+and (-webkit-device-pixel-ratio : 3) {
+  #grid-container{
+    background-color: red;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+
+  }
 }
 
 }
