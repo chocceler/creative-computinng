@@ -315,13 +315,13 @@ max-height: 7000px}
 
 
 #bars {
-  width: 16px;
-  height: 8000px;
-  background-color: #000000;
-  position: relative;
-  top: -31389px;
-  right: -280px;
-  z-index: -1;
+    width: 16px;
+    height: 8000px;
+    background-color: #000000;
+    position: relative;
+    top: -31326px;
+    right: -280px;
+    z-index: -1;
 }
 
 #bars1 {
@@ -329,7 +329,7 @@ max-height: 7000px}
     height: 8000px;
     background-color: #000000;
     position: relative;
-    top: -39382px;
+    top: -39323px;
     right: -312px;
     z-index: -1;
 }
@@ -339,7 +339,7 @@ max-height: 7000px}
     height: 8000px;
     background-color: #000000;
     position: relative;
-    top: -47462px;
+    top: -47405px;
     right: -428px;
     z-index: -1;
 }
