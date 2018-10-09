@@ -3,10 +3,11 @@ max-width: 3000px;
 max-height: 7000px}
 
 #title {
-  transform: rotate(180deg);
-  position: relative;
-  top: 120px;
-  left: -610px;
+    transform: rotate(180deg);
+    position: relative;
+    border-radius: 50%;
+    top: 120px;
+    left: -31vw;
 }
 
 #title-big {
@@ -114,7 +115,7 @@ max-height: 7000px}
     height: 800px;
     background-color: #ce21f9;
     position: relative;
-    top: -8890px;
+    top: -8804px;
     right: -100px;
     z-index: -2;
 }
@@ -124,7 +125,7 @@ max-height: 7000px}
     height: 60px;
     background-color: #aa20f1;
     position: relative;
-    top: -9646px;
+    top: -9585px;
     right: -830px;
     z-index: -1;
 }
@@ -144,8 +145,8 @@ max-height: 7000px}
     height: 400px;
     background-color: white;
     position: relative;
-    top: -9852px;
-    right: -830px;
+    top: -9798px;
+    right: -831px;
     z-index: -2;
 }
 
@@ -154,7 +155,7 @@ max-height: 7000px}
     font-size: 20px;
     font-style: italic;
     position: relative;
-    top: -10302px;
+    top: -10184px;
     right: -1200px;
     z-index: 1;
 }
@@ -164,7 +165,7 @@ max-height: 7000px}
     font-size: 60px;
     font-style: italic;
     position: relative;
-    top: -10715px;
+    top: -10581px;
     right: -30px;
     z-index: -2;
 }
@@ -174,11 +175,11 @@ max-height: 7000px}
     font-size: 60px;
     font-style: italic;
     position: relative;
-    top: -10932px;
+    top: -10800.5px;
     right: -240px;
 }
 
-#PM2 {
+/*#PM2 {
     font-family: "Helvetica";
     font-size: 60px;
     font-style: italic;
@@ -186,7 +187,7 @@ max-height: 7000px}
     position: relative;
     top: -11149px;
     right: -240px;
-}
+}*/
 
 #green-line1 {
     width: 5px;
@@ -202,7 +203,7 @@ max-height: 7000px}
     height: 8000px;
     background-color: #145409;
     position: relative;
-    top: -23098px;
+    top: -23069px;
     right: -40px;
     transform: rotate(90deg);
 }
@@ -222,7 +223,7 @@ max-height: 7000px}
     height: 4800px;
     background-color: #e9baff;
     position: absolute;
-    top: -1780px;
+    top: -1659px;
     right: -823px;
     transform: rotate(90deg);
 }
@@ -243,7 +244,7 @@ max-height: 7000px}
     background-color: #e35000;
     position: fixed;
     top: 570px;
-    right: 0px;
+    left: -50vw;
     z-index: -1;
 }
 
@@ -288,21 +289,21 @@ max-height: 7000px}
       }*/
 
       #big-gli4 {
-        font-family: helvetica;
-        font-style: italic;
-        position: relative;
-        top: -31129px;
-        right: 604px;
-        transform: rotate(180deg) scale(3,3);
-        z-index: -2;
-    }
+    font-family: helvetica;
+    font-style: italic;
+    position: relative;
+    top: -30768px;
+    left: -31vw;
+    transform: rotate(180deg) scale(3,3);
+    z-index: -2;
+}
 
-    #turq {
+#turq {
   width: 500px;
   height: 300px;
   background-color: #89f3fd;
   position: relative;
-  top: -30890px;
+  top: -30562px;
   right: -230px;
   z-index: -2;
 }
@@ -313,34 +314,34 @@ max-height: 7000px}
 
 
 
-      #bars {
-    width: 16px;
-    height: 8000px;
-    background-color: #000000;
-    position: relative;
-    top: -31673px;
-    right: -280px;
-    z-index: -1;
-}
-
-#bars1 {
-width: 69px;
-height: 8000px;
-background-color: #000000;
-position: relative;
-top: -39694px;
-right: -312px;
-z-index: -1;
-}
-
-#bars2 {
-  width: 3px;
+#bars {
+  width: 16px;
   height: 8000px;
   background-color: #000000;
   position: relative;
-  top: -47757px;
-  right: -428px;
+  top: -31389px;
+  right: -280px;
   z-index: -1;
+}
+
+#bars1 {
+    width: 69px;
+    height: 8000px;
+    background-color: #000000;
+    position: relative;
+    top: -39382px;
+    right: -312px;
+    z-index: -1;
+}
+
+#bars2 {
+    width: 3px;
+    height: 8000px;
+    background-color: #000000;
+    position: relative;
+    top: -47462px;
+    right: -428px;
+    z-index: -1;
 }
 
 #bars3 {
@@ -348,77 +349,112 @@ z-index: -1;
     height: 8000px;
     background-color: #000000;
     position: relative;
-    top: -55674px;
+    top: -55385px;
     right: -396px;
     z-index: -1;
 }
 
+
 #bars4 {
-  width: 3px;
-  height: 8000px;
-  background-color: #000000;
-  position: relative;
-  top: -63483px;
-  right: -1219px;
-  z-index: -1;
+    width: 3px;
+    height: 8000px;
+    background-color: #000000;
+    position: relative;
+    top: -63151px;
+    right: -1219px;
+    z-index: -1;
 }
 
 #bars5 {
-  width: 3px;
-  height: 8000px;
-  background-color: #000000;
-  position: relative;
-  top: -71511px;
-  right: -1212px;
-  z-index: -1;
+    width: 3px;
+    height: 8000px;
+    background-color: #000000;
+    position: relative;
+    top: -71174px;
+    right: -1212px;
+    z-index: -1;
 }
 
 #bars6 {
-  width: 1px;
-  height: 8000px;
-  background-color: #000000;
-  position: relative;
-  top: -79459px;
-  right: -1207px;
-  z-index: -1;
+    width: 1px;
+    height: 8000px;
+    background-color: #000000;
+    position: relative;
+    top: -79123px;
+    right: -1207px;
+    z-index: -1;
 }
 
 #bars7 {
-  width: 2px;
-  height: 8000px;
-  background-color: #000000;
-  position: relative;
-  top: -87457px;
-  right: -1228px;
-  z-index: -1;
-}
+    width: 2px;
+    height: 8000px;
+    background-color: #000000;
+    position: relative;
+    top: -87122px;
+    right: -1228px;
+    z-index: -1;
+  }
 
 #bars8 {
-  width: 8px;
-  height: 8000px;
-  background-color: #000000;
-  position: relative;
-  top: -95495px;
-  right: -1275px;
-  z-index: -1;
+    width: 8px;
+    height: 8000px;
+    background-color: #000000;
+    position: relative;
+    top: -95158px;
+    right: -1275px;
+    z-index: -1;
+    animation: down2 3s linear;
 }
+
+@keyframes down2 {
+  from {width:8px;
+  height:2px;}
+    to {width: 8px;
+    height: 8000px;}}
 
 #bars9 {
-  width: 3px;
-  height: 8000px;
-  background-color: #000000;
-  position: relative;
-  top: -103483px;
-  right: -1338px;
-  z-index: -1;
+    width: 3px;
+    height: 8000px;
+    background-color: #000000;
+    position: relative;
+    top: -103146px;
+    right: -1338px;
+    z-index: -1;
+    animation: down1 3s linear;
 }
 
+@keyframes down1 {
+  from {width:3px;
+  height:2px;}
+    to {width: 3px;
+    height: 8000px;}}
+
 #bars10 {
-  width: 5px;
-  height: 8000px;
-  background-color: #000000;
-  position: relative;
-  top: -111536px;
-  right: -1355px;
-  z-index: -1;
+    width: 5px;
+    height: 8000px;
+    background-color: #000000;
+    position: relative;
+    top: -111200px;
+    right: -1355px;
+    z-index: -1;
+    animation: down 3s linear;
+    }
+
+    @keyframes down {
+    from {width:5px;
+    height:2px;}
+      to {width: 5px;
+      height: 8000px;}
+
 }
+  }
+
+@media{(max width: 400px)}
+
+@media only screen
+and (device-width: 375px)
+and (device-height: 812px)
+and (-webkit-min-device-pixel-ratio: 1.5),
+not all, not all, (-webkit-min-device-pixel-ratio: 1.4375),
+(min-resolution: 138dpi),
+(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)
