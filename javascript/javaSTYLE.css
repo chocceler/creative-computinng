@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    margin-right: 960px;
+    font-family: Arial,monospace;
+    font-size: 16px;
+}
+
+.silhou {
+  display: block;
+}
+
+
+
+
+#ref {
+  position: absolute;
+  top: -76px;
+  left: -208px;
+  opacity: 0.5;
+  margin: 0;
+  z-index: -1;
+}
+
+.fill {
+  position: absolute;
+  top:54px;
+  left: 209px;
+}
