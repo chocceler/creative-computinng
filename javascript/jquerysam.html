@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jqueer</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="queerstyle.css">
+  </head>
+  <body>
+    <div id="random"><h1>hi</h1></div>
+    <div class="words">
+    <script>
+//$ ("document").ready(function(){
+  //  var aDIV = $("#random");
+  //  var clicks = 0;
+
+  //  aDIV.css({"color" : "red"})
+  //  aDIV.click(function(){
+  //    console.log("shimata!");
+  //    aDIV.append(" " + clicks + " times");
+//      clicks = clicks + 1
+  //  })
+
+//})
+
+$ ("document").ready(function(){
+    var aDIV = $("#random");
+    var index = 0;
+    var words = ["how", "are", "you", "?"]
+
+    aDIV.css({"color" : "red"})
+    aDIV.click(function(){
+      console.log("shimata!");
+      if(index < words.length){
+      $("body").append("<div class='words'>" + words[index] + "</div>")
+      index++
+    }
+    })
+
+})
+    </script>
+  </body>
+</html>
