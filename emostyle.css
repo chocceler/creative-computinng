@@ -1,0 +1,14 @@
+body {
+max-width: 2500px;
+font-family: Helvetica,monospace;
+}
+
+.mild-title-oppo {
+  position: absolute;
+  top: 121px;
+    left: 423px;
+}
+
+#mild-emo {
+  max-width: 350px;
+}

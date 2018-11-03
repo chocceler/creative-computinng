@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>cha</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="clockstyle.css">
+  </head>
+  <body style="width: 100vw; height: 100vh;">
+    <div class="wild">
+    <div id="clock-body"></div>
+    <div id="segundero"></div>
+  </div>
+
+    <div class="edible">
+      <div id="hour">12 </div>
+      <div id="minute">10 </div>
+      <div id="second">19</div>
+      </div>
+
+  <div id="bite1"></div>
+      <div id="bite2"></div>
+      <div id="bite3"></div>
+      <div id="bite4"></div>
+      <div id="bite5"></div>
+      <div id="bite6"></div>
+
+    <div class="growth">
+      <div id="circle"></div>
+      <div id="segundos"></div>
+      <!-- <div id="minute1"></div>
+      <div id="minute2"></div>
+      <div id="minute3"></div>
+      <div id="minute4"></div>
+      <div id="minute5"></div> -->
+
+    <!-- <section id="text">HI</section>
+    <section id="clicks">0</div>
+      <section id="dot" style="width: 10px; height: 10px;"
+    <section id="moto moto">HELLO</section> -->
+
+    <script>
+    $("document").ready(function(){
+      setInterval( function() {
+        //FOR WILD
+        //let counter = [0, 1, 2, 3, 4, 5];
+        let counter = 0;
+        let sec = new Date().getSeconds();
+        let speed = 360 * sec/6;
+        if (sec == 0 & counter < 5){
+          console.log("xxxxxxxxxxx")
+          speed *= 10;
+          counter += 1;
+        }
+        console.log("the time is "+sec)
+        console.log(counter)
+        console.log("the speed is "+speed)
+        var color = 0;
+        var seconds = new Date().getSeconds();
+        //var hours = new Date().getHours();
+        var mins = new Date().getMinutes();
+        // var minsdeg = mins * 12;
+        // var minsrotate = "rotate(" + minsdeg + "deg)";
+        var sdegree = seconds * 6;
+        var srotate = "rotate(" + sdegree + "deg)";
+        var ssdegree = seconds * -12;
+        var ssrotate = "rotate(" + ssdegree + "deg)";
+        // var minsincr = "rotate(" + minsrotate + 1);
+        // var sincr = "rotate("
+        if(color < 255){
+          color = seconds;
+        } else {
+          color = 0;
+        }
+        $("#segundero").css({ "transform": srotate });
+        $("#clock-body").css({ "transform": ssrotate });
+        //$("body").css({ "background-color": "rgba("+color+","+color+","+color+", 1)" });
+
+      }, 1000 );
+
+
+      setInterval( function() {
+        //FOR EDIBLE
+              var color = 0;
+              var seconds = new Date().getSeconds();
+              var hours = new Date().getHours();
+              var mins = new Date().getMinutes();
+              //var sdegree = seconds * 6;
+              //var srotate = "rotate(" + sdegree + "deg)";
+              if(color < 255){
+                color = seconds;
+              } else {
+                color = 0;
+              }
+              $("#second").html(seconds);
+              $("#minute").html(mins);
+              $("#hour").html(hours);
+        });
+      }, 1000 );
+
+      setInterval( function() {
+        //FOR GROWTH
+        var color = 0;
+        var seconds = new Date().getSeconds();
+        //var hours = new Date().getHours();
+        var mins = new Date().getMinutes();
+        // var minsdeg = mins * 12;
+        // var minsrotate = "rotate(" + minsdeg + "deg)";
+        var sdegree = seconds * 6;
+        var srotate = "rotate(" + sdegree + "deg)";
+      //  var incr = "rotate(" srotate * 60;
+        // var minsincr = "rotate(" + minsrotate + 1);
+        // var sincr = "rotate("
+        if(color < 255){
+          color = seconds;
+        } else {
+          color = 0;
+        }
+        $("#segundos").css({ "transform": srotate });
+        $("#minute1").html(mins);
+        //$("body").css({ "background-color": "rgba("+color+","+color+","+color+", 1)" });
+
+      }, 1000 );
+        // $( "#bite1" ).click(function(){
+        //     $( "#bite1" ).hide(500);
+        // })
+
+//       var textelement = $("#text");
+//       var clickcounter = $("#clicks");
+//       var clicks = 0;
+//
+// $("body").mousemove(function(event){
+//   console.log(event.pageX)
+//   console.log(event.pageY)
+//   $("#dot").append("<div id='dot' style=></div>")
+//   $("#dot").css({"transform" : "translate("+ event.offsetX + "px,"+ event.offsetY + "px); background-color: black"})
+// });
+//
+//       textelement.mouseenter(function(){
+//         textelement.html("more tests!");
+//         textelement.css({"background-color" : "red"})
+//       });
+//
+//       textelement.mouseleave(function(){
+//         textelement.html("mouse left!");
+//       });
+//
+//       textelement.click(function(){
+//         clicks = clicks + 1
+//         clickcounter.html(clicks);
+//         clickcounter.css({"transform" : "translateY(" + clicks*10 + "px)"});
+//       });
+
+
+    </script>
+
+  </body>
+</html>

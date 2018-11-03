@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>cce's Emotions Rating Chart</title>
+    <link rel="stylesheet" href="emostyle.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+<h2>Reference: <a href="simple.wikipedia.org/wiki/List_of_emotions#/media/File:Plutchik-wheel.svg">Wheel of Emotions</a></h1>
+  <h4>Hover category to reveal
+<p> &nbsp;
+<div class="mild-title-emo"><h3>Mild Emotion:</div><div class="mild-title-oppo"><h3>Mild Opposite:</div></h3>
+
+<div id="mild-emo"><i><b>Serenity:</b></i> For those that clear my mind for a while.<br>
+<i><b>Acceptance:</b></i> For those that leave me feeling drained, yet refreshed. Often broaden my way of seeing life.<br>
+<i><b>Apprehension:</b></i> For those that almost make me want to close my eyes so i do not see a character get hurt.<br>
+<i><b>Distraction:</b></i> For those that, at times, make me pick up my phone to see something else.</div>
+
+<div id="mild-oppo">
+  </body>
+  <script>
+  $ ("document").ready(function(){
+    var index= 0;
+    var words= ["<i><b>Serenity:</b></i> For those that clear my mind for a while.<br>",
+    "<i><b>Acceptance:</b></i> For those that leave me feeling drained, yet refreshed. Often broaden my way of seeing life.<br>""
+    "<i><b>Apprehension:</b></i> For those that almost make me want to close my eyes so i do not see a character get hurt.<br>"
+    <i><b>Distraction:</b></i> For those that, at times, make me pick up my phone to see something else."]
+
+    $( ".mild-title-emo" ).click(function(){
+      $("#mild-emo").show("<div class=''>" + words[index] + "</div>");}
+
+  })
+  </script>
+</html>
