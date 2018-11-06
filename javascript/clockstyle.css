@@ -189,6 +189,216 @@ max-width:2500px
   opacity: 1;}
 }
 
+#bite7{
+  width: 40px;
+  height: 40px;
+  /* background-color: white; */
+  border-radius: 300px;
+  margin-left: 350px;
+  margin-top: 50px;
+  position: absolute;
+  top: -3px;
+  left: 110px;
+  z-index: 1;
+  animation: show7 .05s linear 7s;
+  animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+@keyframes show7 {
+  from { opacity: -1; }
+  to {background-color: white;
+  opacity: 1;}
+}
+
+#bite8{
+  width: 40px;
+  height: 40px;
+  /* background-color: white; */
+  border-radius: 300px;
+  margin-left: 350px;
+  margin-top: 50px;
+  position: absolute;
+  top: 47px;
+  left: 204px;
+  z-index: 1;
+  animation: show8 .05s linear 8s;
+  animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+@keyframes show8 {
+  from { opacity: -1; }
+  to {background-color: white;
+  opacity: 1;}
+}
+
+#bite9{
+  width: 40px;
+  height: 40px;
+  /* background-color: white; */
+  border-radius: 300px;
+  margin-left: 350px;
+  margin-top: 50px;
+  position: absolute;
+  top: -4px;
+  left: 204px;
+  z-index: 1;
+  animation: show9 .05s linear 9s;
+  animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+@keyframes show9 {
+  from { opacity: -1; }
+  to {background-color: white;
+  opacity: 1;}
+}
+
+#bite10{
+  width: 40px;
+  height: 40px;
+  /* background-color: white; */
+  border-radius: 300px;
+  margin-left: 350px;
+  margin-top: 50px;
+  position: absolute;
+  top: 16px;
+  left: 35px;
+  z-index: 1;
+  animation: show10 .05s linear 10s;
+  animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+@keyframes show10 {
+  from { opacity: -1; }
+  to {background-color: white;
+  opacity: 1;}
+}
+
+#bite11{
+  width: 40px;
+  height: 40px;
+  /* background-color: white; */
+  border-radius: 300px;
+  margin-left: 350px;
+  margin-top: 50px;
+  position: absolute;
+  top: 16px;
+  left: 59px;
+  z-index: 1;
+  animation: show11 .05s linear 11s;
+  animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+@keyframes show11 {
+  from { opacity: -1; }
+  to {background-color: white;
+  opacity: 1;}
+}
+
+#bite12{
+  width: 40px;
+  height: 40px;
+  /* background-color: white; */
+  border-radius: 300px;
+  margin-left: 350px;
+  margin-top: 50px;
+  position: absolute;
+  top: 37px;
+  left: 10px;
+  z-index: 1;
+  animation: show12 .05s linear 12s;
+  animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+@keyframes show12 {
+  from { opacity: -1; }
+  to {background-color: white;
+  opacity: 1;}
+}
+
+#bite13{
+  width: 40px;
+  height: 40px;
+  /* background-color: white; */
+  border-radius: 300px;
+  margin-left: 350px;
+  margin-top: 50px;
+  position: absolute;
+  top: 60px;
+  left: 119px;
+  z-index: 1;
+  animation: show13 .05s linear 13s;
+  animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+@keyframes show13 {
+  from { opacity: -1; }
+  to {background-color: white;
+  opacity: 1;}
+}
+
+#bite14{
+  width: 40px;
+  height: 40px;
+  /* background-color: white; */
+  border-radius: 300px;
+  margin-left: 350px;
+  margin-top: 50px;
+  position: absolute;
+  top: 26px;
+  left: 92px;
+  z-index: 1;
+  animation: show14 .05s linear 14s;
+  animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+@keyframes show14 {
+  from { opacity: -1; }
+  to {background-color: white;
+  opacity: 1;}
+}
+
+#bite15{
+  width: 40px;
+  height: 40px;
+  /* background-color: white; */
+  border-radius: 300px;
+  margin-left: 350px;
+  margin-top: 50px;
+  position: absolute;
+  top: 26px;
+  left: -1px;
+  z-index: 1;
+  animation: show15 .05s linear 15s;
+  animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+@keyframes show15 {
+  from { opacity: -1; }
+  to {background-color: white;
+  opacity: 1;}
+}
+
+#bite16{
+  width: 40px;
+  height: 40px;
+  /* background-color: white; */
+  border-radius: 300px;
+  margin-left: 350px;
+  margin-top: 50px;
+  position: absolute;
+  top: 60px;
+  left: -1px;
+  z-index: 1;
+  animation: show16 .05s linear 16s;
+  animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+@keyframes show16 {
+  from { opacity: -1; }
+  to {background-color: white;
+  opacity: 1;}
+}
+
 
 
 #circle {
