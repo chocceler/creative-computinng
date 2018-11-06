@@ -33,12 +33,20 @@
       <div id="segundos4"></div>
       <div id="segundos5"></div>
       <div id="segundos6"></div>
+    </div>
 
       <div class="blurry">
         <div id="clockcorp"></div>
         <div id="secondf"></div>
         <div id="minutef"></div>
-        <div id="hourf"></div>
+        <div id="hourf"></div></div>
+
+      <div class="glossy">
+        <div id="clock5"></div>
+        <div id="second5"></div>
+        <div id="minute5"></div>
+        <div id="hour5"></div>
+        <div id="gloss"></div>
       <!-- <div id="minute1"></div>
       <div id="minute2"></div>
       <div id="minute3"></div>
@@ -157,7 +165,7 @@
               var mins = new Date().getMinutes();
               var sdegree = seconds * 6;
               var srotate = "rotate(" + sdegree + "deg)";
-              var mdegree = mins * 12;
+              var mdegree = mins * 6;
               var mrotate = "rotate(" + mdegree + "deg)";
               var hdegree = hours * 30;
               var hrotate = "rotate(" + hdegree + "deg)";
@@ -174,11 +182,47 @@
                  $('#secondf').fadeOut(600).fadeIn(300);
               }, 1000 );
               setTimeout(function() {
-                 $('#minutef').fadeOut(1000).fadeIn(500);
+                 $('#minutef').fadeOut(600).fadeIn(300);
               }, 60000 );
               setTimeout(function() {
                  $('#hourf').fadeOut(5000).fadeIn(800);
               }, 3.6e+6 );
+      }, 1000 );
+
+
+      setInterval( function() {
+        //FOR GLOSSY
+              var color = 0;
+              var seconds = new Date().getSeconds();
+              var hours = new Date().getHours();
+              var mins = new Date().getMinutes();
+              var sdegree = seconds * 6;
+              var srotate = "rotate(" + sdegree + "deg)";
+              var mdegree = mins * 6;
+              var mrotate = "rotate(" + mdegree + "deg)";
+              var hdegree = hours * 30;
+              var hrotate = "rotate(" + hdegree + "deg)";
+              if(color < 255){
+                color = seconds;
+              } else {
+                color = 0;
+              }
+              $("#second5").css({ "transform": srotate });
+              $("#minute5").css({ "transform": mrotate });
+              $("#hour5").css({ "transform": hrotate });
+
+
+        $("#gloss").fadeToggle(500).fadeToggle(mins);
+
+    //           $("#clock5").click(function(){
+    //     var div = $("#gloss");
+    //     startAnimation();
+    //     function startAnimation(){
+    //         div.animate({left: 555}, "slow");
+    //         div.animate({left: 350}, "slow", startAnimation);
+    //     }
+    // });
+
       }, 1000 );
         // $( "#bite1" ).click(function(){
         //     $( "#bite1" ).hide(500);

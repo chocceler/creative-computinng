@@ -318,12 +318,85 @@ max-width:2500px
   background-color: white;
   width: 2px;
   height: 40px;
-  top: -306px;
-  left: 170px;
-  transform-origin: top;
+  top: -310px;
+  left: 150px;
+  transform-origin: bottom;
   transition: all .3s ease;
   z-index: 1;
 }
+
+#clock5 {
+  margin-top: -410px;
+  margin-left: 350px;
+  width:200px;
+  height: 200px;
+  border-radius: 300px;
+  background-color: #11CDF7;
+  transition: all .3s ease;
+  z-index: 1;
+}
+
+#second5 {
+  position: relative;
+  background-color: black;
+  width: 2px;
+  height: 100px;
+  top: -201px;
+  left: 450px;
+  transform-origin: bottom;
+  transition: all .3s ease;
+  z-index: 1;
+}
+
+#minute5 {
+  position: relative;
+  background-color: black;
+  width: 2px;
+  height: 70px;
+  top: -271px;
+  left: 450px;
+  transform-origin: bottom;
+  transition: all .3s ease;
+  z-index: 1;
+}
+
+#hour5 {
+  position: relative;
+  background-color: black;
+  width: 2px;
+  height: 40px;
+  top: -310px;
+  left: 450px;
+  transform-origin: bottom;
+  transition: all .3s ease;
+  z-index: 1;
+}
+
+#gloss {
+  position: relative;
+  background-color: white;
+  opacity: 0.5;
+  width: 50px;
+  height: 205px;
+  border-radius: 300px;
+  top: -412px;
+  left: 347px;
+  /* transform: rotate(90deg); */
+  display: block;
+  width: 15%;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  z-index: 2;
+ animation: brush 3s linear infinite 2s;
+
+  animation-timing-function: ease-out;
+  animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+@keyframes brush {
+  from { left: 555px; }
+  to {left: 350px;}
+} */
 
 /* #minute1 {
   position: relative;
