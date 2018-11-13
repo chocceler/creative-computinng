@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Weather</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <style>
+
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 2rem;
+      max-width: 2500px;
+    }
+
+    .circle{
+      width: 10px;
+      height: 10px;
+      background-color: blue;
+      border-radius: 1000px;
+      transition: all 1s ease;
+    }
+
+    .square{
+      width: 150px;
+      height: 150px;
+      background-color: blue;
+      margin-left: -185px;
+      transition: all 1s ease;
+    }
+
+    .scale{
+      transform: scale(1.2);
+    }
+
+    .text{
+      font-family: sans-serif;
+      font-weight: 200;
+      font-size: 2rem;
+      width: 100vw;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    #tempText{
+      color: blue;
+    }
+
+    #windText{
+      color: lightblue;
+      transform: rotate(-90deg);
+      margin-left: -360px;
+      margin-top: 435px;
+      position: absolute;
+    }
+
+     #temp{
+       margin-top: -142px;
+     }
+
+    #wind{
+      background-color: lightblue;
+      margin-top: 0px;
+    }
+
+    #tempp{
+      background-color: red;
+      position: absolute;
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+
+    #viento{
+      background-color: orange;
+      position: absolute;
+    }
+
+    #windTexto{
+      color: orange;
+      margin-left: -730px;
+      margin-top: -57px;
+      transform: rotate(-90deg);
+    }
+
+    #tempTexto{
+      color: red;
+      margin-left: 0px;
+      margin-top: 590px;
+      position: absolute;
+    }
+
+    .square2{
+      margin-left: 0px;
+    }
+
+    #Sant{
+      margin-left: -285px;
+      align-items: center;
+    }
+
+  </style>
+</head>
+<body>
+<div id="tempText" class="text"></div>
+
+<div id="NY">
+  <div id="temp" class="circle"></div>
+  <div id="wind" class="square"></div>
+</div>
+
+<div id="windText" class="text"></div>
+
+<div id="Sant">
+  <div id="tempp" class="circle"></div>
+  <div id="viento" class="square"></div></div>
+  <div id="windTexto" class="text"></div>
+  <div id="tempTexto" class="text"></div>
+
+<script type="text/javascript">
+  $("document").ready(function(){
+    $.ajax({
+      url: "http://api.openweathermap.org/data/2.5/weather?q=New York&units=imperial&appid=ef3e268cbe387a39c451c064de7ff0c1",
+      success: function(data) {
+        console.log(data.name);
+        console.log(data.main.temp);
+        console.log(data.wind.speed);
+        handleData(data)
+      }
+    });
+
+
+    function handleData(data){
+      console.log(data.name);
+      console.log(data.main.temp);
+      console.log(data.wind.speed);
+      var winddeg= console.log(data.wind.speed)* 6;
+      var windrot= "rotate(" + winddeg +"deg)";
+
+      $("#tempText").html(data.main.temp);
+      $("#temp").css("width", data.main.temp*6);
+      $("#temp").css("height", data.main.temp*6);
+      $("#windText").html(data.wind.speed);
+      $("wind").css({"transform": windrot});
+    }
+
+    })
+
+$("document").ready(function(){
+    $.ajax({
+      url: "http://api.openweathermap.org/data/2.5/weather?q=Dominican Republic&units=imperial&appid=ef3e268cbe387a39c451c064de7ff0c1",
+      success: function(dato) {
+        console.log(dato.name);
+        console.log(dato.main.temp);
+        console.log(dato.wind.speed);
+        handleData(dato)
+      }
+    });
+
+
+    function handleData(dato){
+      console.log(dato.name);
+      console.log(dato.main.temp);
+      console.log(dato.wind.speed);
+      var vientodeg= console.log(dato.wind.speed)* 6;
+      var vientorot= "rotate(" + vientodeg +"deg)";
+
+      $("#tempp").css("width", dato.main.temp*6);
+      $("#tempp").css("height", dato.main.temp*6);
+      $("#windTexto").html(dato.wind.speed);
+      $("#tempTexto").html(dato.main.temp);
+      $("viento").css({"transform": vientorot});
+    }
+
+})
+
+    // });
+    //
+    // var weatherText = $("#weather")
+    // var temp, wind
+    //
+    // function handleData(data){
+    //   $("#tempText").html("the current temperature is " + data.main.temp + "°")
+    //   $("#windText").html("the current wind speed is " + data.wind.speed + " mph")
+    //
+      // $("#temp").css("width", data.main.temp*6);
+      // $("#temp").css("height", data.main.temp*6);
+    //
+    //   $("#wind").css("width", data.wind.speed*6);
+    //   $("#wind").css("height", data.wind.speed*6);
+    // }
+
+    // var nameArray = ["Lily", "Stella"]
+    // nameArray [0]
+    // "Lily"
+    //
+    // var person = {
+    //   name: "Lily",
+    //   age: "19",
+    //   status: "fucking insane",
+    // }
+    //
+    // var ppl = {
+    //   person 1: {
+    //     name: "Lily",
+    //     age: "19",
+    //     status: "fucking insane",
+    //   },
+    //   person 2: {
+    //     name: "Yunri",
+    //     age: "19",
+    //     status: "fucking lowkey",
+    //   }
+    // }
+
+</script>
+
+</body>
+</html>

@@ -110,7 +110,19 @@ grid-template-columns: repeat(4, 1fr);
 }
 
 .clock:hover {
-  background-color: #EC8619  
+  background-color: #EC8619
+}
+
+.weather {
+  grid-column: 1;
+  grid-row: 1;
+  border: 2px solid black;
+  border-spacing: 15px;
+  transition: all 1s ease-out;
+}
+
+.weather:hover {
+  background-color: #D2EC19  
 }
 
 @media (max width: 400px){
