@@ -242,6 +242,7 @@ color: red;
   }
 
   .row8{
+    position: fixed;
     width: 370px;
   /* justify-content: space-between; */
   display: flex;
@@ -256,19 +257,25 @@ color: red;
   }
 
   .row8 > div{
+    position: fixed;
     width: 300px;
     padding: 1rem;
     padding-bottom: 5rem;
   }
 
+  #kuriku {
+    padding: 1rem;
+  }
+
   #anuncio {
     position: fixed;
-    top: 660px;
+    margin-top: 80vh;
     left: 950px;
   }
 #reference {
   position: fixed;
-  top: 720px;
+  /* margin-bottom: 630px; */
+  margin-top: 85vh;
   left: 950px;
 }
 
@@ -302,13 +309,81 @@ to {
 }
 
 #message2{
-animation: show2 0.5s linear 190s;
+animation: show1 0.5s linear 190s;
 animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
 }
 
-@keyframes show2 {
-from { opacity: 0; }
-to {
-  color: black;
-  opacity: 1;}
+#message3{
+animation: show1 0.5s linear 195s;
+animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+#message4{
+animation: show1 0.5s linear 215s;
+animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+#message5{
+animation: show1 0.5s linear 218s;
+animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+#message6{
+animation: show1 0.5s linear 223s;
+animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+#message7{
+animation: show1 0.5s linear 226s;
+animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+#message8{
+animation: show1 0.5s linear 231s;
+animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+#message9{
+animation: show1 0.5s linear 241s;
+animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+#message10{
+animation: show1 0.5s linear 244s;
+animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+#message11{
+animation: show1 0.5s linear 248s;
+animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+#message12{
+animation: show1 0.5s linear 258s;
+animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+#message13{
+animation: show1 0.5s linear 260s;
+animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+#message14{
+animation: show1 0.5s linear 261s;
+animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+#message15{
+animation: show1 0.5s linear 264s;
+animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+#message16{
+animation: show1 0.5s linear 265s;
+animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
+}
+
+#message17{
+animation: show1 0.5s linear 280s;
+animation-fill-mode:forwards; -webkit-animation-fill-mode:forwards;
 }
