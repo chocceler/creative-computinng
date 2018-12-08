@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>NyuuRyoku</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body>
+    <form id="form">
+    <input id="input" type="text" name="Hola" value="Say Hello!">
+    <input type="submit" name="Ho" value="BYE">
+    </form>
+
+    <div id="inputs">
+
+    </div>
+
+    <script type="text/javascript">
+      $("#form").submit(function(event) {
+        var userInput = $("#input").val()
+        if(userInput) = "hello")(
+        $("#inputs").prepend("<div> hey there </div>")
+        )
+        // $("#inputs").append("<div>" + userInput + "</div>")
+        // event.preventDefault();
+      });
+
+    </script>
+  </body>
+</html>

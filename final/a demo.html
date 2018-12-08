@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mark</title><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="demostyle.css">
+
+  </head>
+  <body>
+    <!-- <section id="text">Leave Your Mark</section> -->
+    <!-- <section id="text2">Marks Left</section> -->
+    <section id="clicks">0</section>
+    <!-- <div class="reveal"><img src="image-reveal-2.png" alt="reveal" style="width:1500px; height:800px"></div> -->
+    <!-- <canvas id="canvas2" style="background-color: white" width=1000 height=1000></canvas> -->
+    <canvas id="canvas"  width=1200 height=1000></canvas>
+
+    <script>
+      $("document").ready(function(){
+        //once the document has loaded
+        //Our code
+        var textElement = $("#text2");
+        var clickCounter = $("#clicks");
+        var clicks = 0;
+
+        $("body").mousemove(function(event){
+          console.log(event.offsetX)
+          console.log(event.offsetY)
+          clicks = clicks+1
+          $("#clicks").html("Marks Left " + clicks)
+            // $("body").append(
+            //   // "<div class='dot' style='transform: translate(" + event.pageX + "px,"+ event.pageY + "px);'></div>"
+            //   "<div class='dot' style='transform: translate(" + (event.clientX-10) + "px,"+ (event.clientY-50) + "px); filter: hue-rotate(" + (event.clientY) + "deg); background-color: rgba("+(event.clientY/255)*100+","+(event.clientX/255)*100+",255, 1)'></div>"
+            //   )
+          })
+        })
+
+        var ctx = canvas.getContext("2d"),
+            img = new Image,
+            radius = 40;
+
+        img.src = "image-reveal-3.png";
+        img.onload = setup;
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        img.width = canvas.width/2;
+        img.height = canvas.height/2;
+
+        // var ctx2 = $("#canvas2")[0].getContext('2d');
+        ctx.fillStyle="#FFFFFF"
+        ctx.font="120px Georgia";
+        ctx.fillText("Leave Your Mark",750,700);
+
+        function setup() {
+
+          // set image as pattern for fillStyle
+
+
+          ctx.fillStyle = ctx.createPattern(this, "no-repeat");
+
+
+          // for demo only, reveals image while mousing over canvas
+          canvas.onmousemove = function(e) {
+            var r = this.getBoundingClientRect(),
+                x = e.clientX - r.left,
+                y = e.clientY - r.top;
+
+            ctx.beginPath();
+            ctx.moveTo(x + radius, y);
+            ctx.arc(x, y, radius, 0, 2*Math.PI);
+            ctx.fill();
+          };
+        }
+
+
+        // $("body").append(
+        //   // "<div class='dot' style='transform: translate(" + event.pageX + "px,"+ event.pageY + "px);'></div>"
+        //   "<div class='dot' style='transform: translate(" + (event.clientX-10) + "px,"+ (event.clientY-50) + "px); filter: hue-rotate(" + (event.clientY) + "deg); background-color: rgba("+(event.clientY/255)*100+","+(event.clientX/255)*100+",255, 1)'></div>"
+        //   )
+
+      //     $("body").onmousemove(function(event){
+      //   $("body").append(
+      //     "<div class='dot' style='transform: translate(" + (event.clientX-10) + "px,"+ (event.clientY-50) + "px); filter: hue-rotate(" + (event.clientY) + "deg); background-color: rgba("+(event.clientY/255)*100+","+(event.clientX/255)*100+",255, 1)'></div>"
+      //   )}
+      // )
+
+
+        // });
+    </script>
+    </body>
+</html>
