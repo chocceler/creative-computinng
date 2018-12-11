@@ -1,6 +1,6 @@
 body{
-  /* max-width: 1500px; */
-  /* max-height: 500px; */
+  /* max-width: 1500px;
+  max-height: 500px; */
   width: 10vw;
   height: 10vh;
 background-color: black;
@@ -37,6 +37,12 @@ font-family: Helvetica,monospace;
   top: 90vh;
   left: 80vw;
   z-index: 1;
+}
+
+#canvas{
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .reveal {
