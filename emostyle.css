@@ -4,6 +4,15 @@ font-family: Helvetica,monospace;
 padding-bottom: 350px;
 }
 
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: red;
+}
+
 .row{
 display: flex;
 float: left;
@@ -118,6 +127,7 @@ column-count: 2;
 .mild-title-oppo {
   font-size: 16pt;
   font-weight: bold;
+  transition: 0.2s ease-in;
 }
 
 .mild-title-oppo:hover {
@@ -127,6 +137,7 @@ column-count: 2;
 .mild-title-emo {
   font-size: 16pt;
   font-weight: bold;
+  transition: 0.2s ease-in;
 }
 
 .mild-title-emo:hover {
@@ -142,6 +153,7 @@ column-count: 2;
   .basic-title-oppo {
     font-size: 16pt;
     font-weight: bold;
+    transition: 0.2s ease-in;
   }
   .basic-title-oppo:hover{
     color: red;
@@ -168,6 +180,7 @@ column-count: 2;
 .basic-title-emo {
   font-size: 16pt;
   font-weight: bold;
+  transition: 0.2s ease-in;
 }
 
 .basic-title-emo:hover {
@@ -188,6 +201,7 @@ color: red;
 .inten-title-emo {
   font-size: 16pt;
   font-weight: bold;
+  transition: 0.2s ease-in;
 }
 
 .inten-title-emo:hover{
@@ -203,6 +217,7 @@ color: red;
   .inten-title-oppo {
     font-size: 16pt;
     font-weight: bold;
+    transition: 0.2s ease-in;
   }
 
   .inten-title-oppo:hover{
@@ -212,6 +227,7 @@ color: red;
   .dyads-title {
     font-size: 16pt;
     font-weight: bold;
+    transition: 0.2s ease-in;
   }
 
   .dyads-title:hover{
