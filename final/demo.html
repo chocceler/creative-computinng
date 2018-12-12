@@ -9,10 +9,11 @@
   <body style="width: 10vw; height: 10vh;">
     <!-- <section id="text">Leave Your Mark</section> -->
     <!-- <section id="text2">Marks Left</section> -->
-    <section id="clicks">0</section>
+    <!-- <section id="clicks">0</section> -->
     <!-- <div class="reveal"><img src="image-reveal-2.png" alt="reveal" style="width:1500px; height:800px"></div> -->
     <!-- <canvas id="canvas2" style="background-color: white" width=1000 height=1000></canvas> -->
     <canvas id="canvas"  width=1200vw height=1000vh></canvas>
+    <canvas id="canvas2"  width=1200vw height=1000vh></canvas>
 
     <script>
       $("document").ready(function(){
@@ -34,11 +35,25 @@
           })
         })
 
-        var ctx = canvas.getContext("2d"),
+        var ctx = canvas.getContext("2d")
             img = new Image,
             radius = 40;
 
         img.src = "image-reveal-3.png";
+        img.onload = setup;
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        img.width = canvas.width/2;
+        img.height = canvas.height/2;
+
+
+        var ctx2 = canvas.getContext("2d"),
+            img = new Image,
+            radius = 40;
+
+        img.src = "image-reveal-1.png";
         img.onload = setup;
 
         canvas.width = window.innerWidth;
@@ -70,6 +85,27 @@
             ctx.moveTo(x + radius, y);
             ctx.arc(x, y, radius, 0, 2*Math.PI);
             ctx.fill();
+          };
+        }
+
+        function setup2() {
+
+          // set image as pattern for fillStyle
+
+
+          ctx.fillStyle = ctx.createPattern(this, "no-repeat");
+
+
+          // for demo only, reveals image while mousing over canvas
+          canvas.onmousemove = function(e) {
+            var r = this.getBoundingClientRect(),
+                x = e.clientX - r.left,
+                y = e.clientY - r.top;
+
+            ctx2.beginPath();
+            ctx2.moveTo(x + radius, y);
+            ctx2.arc(x, y, radius, 0, 2*Math.PI);
+            ctx2.fill();
           };
         }
 
