@@ -132,6 +132,7 @@ column-count: 2;
 
 .mild-title-oppo:hover {
   color: red;
+  cursor: pointer;
 }
 
 .mild-title-emo {
@@ -142,6 +143,7 @@ column-count: 2;
 
 .mild-title-emo:hover {
   color: red;
+  cursor: pointer;
 }
 
 /* .basic-title-oppo {
@@ -157,6 +159,7 @@ column-count: 2;
   }
   .basic-title-oppo:hover{
     color: red;
+    cursor: pointer;
   }
 
   /* .basicoppo {
@@ -185,6 +188,7 @@ column-count: 2;
 
 .basic-title-emo:hover {
 color: red;
+cursor: pointer;
 }
 
 /* .basicemo {
@@ -206,6 +210,7 @@ color: red;
 
 .inten-title-emo:hover{
   color: red;
+  cursor: pointer;
 }
 
 /* .inten-title-oppo {
@@ -222,6 +227,7 @@ color: red;
 
   .inten-title-oppo:hover{
     color: red;
+    cursor: pointer;
   }
 
   .dyads-title {
@@ -232,6 +238,7 @@ color: red;
 
   .dyads-title:hover{
     color: red;
+    cursor: pointer;
   }
 
   .title-dummy {
