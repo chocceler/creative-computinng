@@ -294,6 +294,7 @@ cursor: pointer;
     position: fixed;
     margin-top: 80vh;
     left: 950px;
+    cursor: help;
   }
 #reference {
   position: fixed;
