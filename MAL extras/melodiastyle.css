@@ -1,0 +1,196 @@
+body {
+max-height: 768px;
+max-width: 1400px;
+font-family: Helvetica,monospace;
+}
+
+#ref {
+  position: absolute;
+  width: 1345px;
+  opacity: 0.3;
+}
+
+#yucabody {
+  position: absolute;
+  width: 1345px;
+}
+
+#coinbutton img {
+  position: absolute;
+  width: 11px;
+  z-index: 2;
+  cursor: pointer;
+  top: 608px;
+  left: 201px;
+}
+
+#b1 img {
+  position: absolute;
+  width: 11px;
+  z-index: 2;
+  cursor: help;
+  top: 437px;
+  left: 206px;
+}
+
+#b2 img {
+  position: absolute;
+  width: 11px;
+  z-index: 2;
+  cursor: help;
+  top: 455px;
+  left: 206px;
+}
+
+#b3 img {
+  position: absolute;
+  width: 11px;
+  top: 473px;
+  left: 206px;
+  z-index: 2;
+  cursor: help;
+}
+
+#b4 img {
+  position: absolute;
+  width: 11px;
+  top: 490px;
+  left: 206px;
+  z-index: 2;
+  cursor: help;
+}
+
+#b5 img {
+  position: absolute;
+  width: 11px;
+  top: 508px;
+  left: 206px;
+  z-index: 2;
+  cursor: help;
+}
+
+#b6 img {
+  position: absolute;
+  width: 11px;
+  top: 526px;
+  left: 206px;
+  z-index: 2;
+  cursor: help;
+}
+
+#b7 img {
+  position: absolute;
+  width: 11px;
+  top: 437px;
+  left: 284px;
+  z-index: 2;
+  cursor: help;
+}
+
+#b8 img {
+  position: absolute;
+  width: 11px;
+  top: 455px;
+  left: 284px;
+  z-index: 2;
+  cursor: help;
+}
+
+#b9 img {
+  position: absolute;
+  width: 11px;
+  top: 473px;
+  left: 284px;
+  z-index: 2;
+  cursor: help;
+}
+
+#b10 img {
+  position: absolute;
+  width: 11px;
+  top: 490px;
+  left: 284px;
+  z-index: 2;
+  cursor: help;
+}
+
+#b11 img {
+  position: absolute;
+  width: 11px;
+  top: 508px;
+  left: 284px;
+  z-index: 2;
+  cursor: help;
+}
+
+#b12 img {
+  position: absolute;
+  width: 11px;
+  top: 526px;
+  left: 284px;
+  z-index: 2;
+  cursor: help;
+}
+
+#b13 img {
+  position: absolute;
+  width: 11px;
+  top: 437px;
+  left: 360px;
+  z-index: 2;
+  cursor: help;
+}
+
+#b14 img {
+  position: absolute;
+  width: 11px;
+  top: 455px;
+  left: 360px;
+  z-index: 2;
+  cursor: help;
+}
+
+#b15 img {
+  position: absolute;
+  width: 11px;
+  top: 473px;
+  left: 360px;
+  z-index: 2;
+  cursor: help;
+}
+
+#b16 img {
+  position: absolute;
+  width: 11px;
+  top: 490px;
+  left: 360px;
+  z-index: 2;
+  cursor: help;
+}
+
+#b17 img {
+  position: absolute;
+  width: 11px;
+  top: 508px;
+  left: 360px;
+  z-index: 2;
+  cursor: help;
+}
+
+#b18 img {
+  position: absolute;
+  width: 11px;
+  top: 526px;
+  left: 360px;
+  z-index: 2;
+  cursor: help;
+}
+
+#vidframe {
+  width: 560px;
+  height: 315px;
+  background-color: black;
+  cursor: grab;
+  top: 55px;
+  left: 913px;
+}

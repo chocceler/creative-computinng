@@ -1,0 +1,97 @@
+body{
+  background-color:black;
+  font-family: 'VT323', monospace;
+  color:white;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor:alias;
+}
+
+.pix{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor:alias;
+  }
+
+.photos{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
+  }
+
+#one{
+position: absolute;
+height: 100%;
+width: auto;
+}
+#two{
+position: absolute;
+height:100%;
+width:auto;
+}
+#three{
+position: absolute;
+height:100%;
+width:auto;
+right: 1px;
+}
+#four{
+position: absolute;
+height:auto;
+width:100%;
+}
+#five{
+position: absolute;
+height:100%;
+width:auto;
+}
+#six{
+position: absolute;
+height:100%;
+width:auto;
+
+}
+#arrow{
+position: absolute;
+height:100%;
+width:auto;
+
+}
+#hand{
+position: absolute;
+height:100%;
+width:auto;
+
+}
+#snake{
+  position: absolute;
+  height:100%;
+  width:auto;
+  }
+
+#oo{
+  position:absolute;
+  height:100%;
+  width:100%;
+}
+#o{
+  position:absolute;
+  height:100%;
+  width:100%;
+}
+#ooo{
+  position:absolute;
+  height:100%;
+  width:100%;}
+#oooo{
+  position:absolute;
+  height:100%;
+  width:100%;}
+#ooooo{
+  position:absolute;
+  height:100%;
+  width:100%;}

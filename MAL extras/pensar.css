@@ -1,0 +1,102 @@
+body {
+text-align: left;
+position: absolute;
+padding-right: 900px;
+max-height: 500px;
+max-width: 1200px;
+top: 0px;
+font-size: 100px
+}
+
+#alohoudini {
+  position: absolute;
+  text-align: left;
+  width: 1000vw;
+  height: 1000vh;
+  animation: move 60s infinite;
+  cursor: grab;
+}
+
+
+@keyframes move {
+  0%{transform: translate(3000px,0px);}
+  20%{transform: translate(-1000px,-10px);}
+  50%{transform: translate(480px,-50px);}
+  75%{transform: translate(2000px,300px);}
+  100%{transform: translate(1000px,1000px);}
+}
+
+.pesimista p:nth-child(1) {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* .pesimista p:nth-child(1)
+{
+    white-space:nowrap;
+    overflow:hidden;
+    opacity:0;
+    -webkit-animation: type 5s steps(40, end);
+    animation: type2 5s steps(40, end);
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+} */
+
+.pesimista p:nth-child(2)
+{
+  white-space:nowrap;
+  overflow:hidden;
+  border-right: .15em solid black;
+  opacity:0;
+  margin: 0 auto;
+  -webkit-animation: typing2 3.5s steps(40, end);
+  animation: typing2 3.5s steps(40, end);
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+{white-space:
+letter-spacing: .15em; /* Adjust as needed */}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes typing2{
+0%{width: 0;}
+from {opacity:0;}
+1%{opacity:1;}
+to{opacity:1;}
+100%{opacity:1;}
+from { width: 0 }
+to { width: 100% }
+}
+@-webkit-keyframes typing2{
+0%{width: 0;}
+from {opacity:0;}
+1%{opacity:1;}
+to{opacity:1;}
+100%{opacity:1;}
+from { width: 0 }
+to { width: 100% }
+}
+
+#lillith video {
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+}

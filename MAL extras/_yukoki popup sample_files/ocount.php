@@ -1,0 +1,1 @@
+document.getElementById("h_1621077").innerHTML = "<a href='http://freehostedscripts.net/hc.php?id=MTYyMTA3N3x5dWtva2kudHVtYmxyLmNvbXwwfDE=' target='_blank' title='8720388 PageViews [FHS]'>8720388 lost stars</a>";

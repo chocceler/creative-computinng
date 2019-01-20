@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://elliotbohlen.github.io/creativecomputing/final/one.html -->
+<html lang="en" dir="ltr" class="gr__elliotbohlen_github_io"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <script src="./need a hand__files/jquery-1.10.2.js"></script>
+    <link rel="icon" href="https://elliotbohlen.github.io/creativecomputing/images/sky.jpg" type="image/gif">
+    <title>need a hand?</title>
+    <link href="./need a hand__files/css" rel="stylesheet">
+    <link rel="stylesheet" href="./need a hand__files/one.css">
+  </head>
+  <body data-gr-c-s-loaded="true" style="">
+<a href="https://elliotbohlen.github.io/creativecomputing/final/advice.html" class="photos">
+<img id="hand" class="pix" src="./need a hand__files/lginvhand.png" alt="" style="display: none;">
+<img id="six" class="pix" src="./need a hand__files/lginv6.png" alt="" style="display: none;">
+<img id="five" class="pix" src="./need a hand__files/lginv5.png" alt="" style="display: none;">
+<img id="three" class="pix" src="./need a hand__files/lginv3.png" alt="" style="display: none;">
+<img id="one" class="pix" src="./need a hand__files/lginv1.png" alt="" style="display: none;">
+<img id="two" class="pix" src="./need a hand__files/lginv2.png" alt="" style="display: none;">
+<!-- <img id="four" class="pix"src="images/lginv4.png" alt=""> !-->
+<img id="arrow" class="pix" src="./need a hand__files/lginvarrow.png" alt="" style="display: none;">
+<img id="snake" class="pix" src="./need a hand__files/lginvsnake.png" alt="" style="display: none;">
+<img id="hand" class="pix" src="./need a hand__files/lginvhand.png" alt="" style="display: block;">
+<img id="o" class="pix" src="./need a hand__files/overlap1.png" alt="" style="display: none;">
+<img id="oo" class="pix" src="./need a hand__files/overlap2.png" alt="" style="display: none;">
+<img id="ooo" class="pix" src="./need a hand__files/overlap3.png" alt="" style="display: none;">
+<img id="oooo" class="pix" src="./need a hand__files/overlap4.png" alt="" style="display: none;">
+<img id="ooooo" class="pix" src="./need a hand__files/overlap5.png" alt="" style="display: none;">
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("pix");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 400); // Change image every 2 seconds
+}
+</script>
+
+  
+
+</a></body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
