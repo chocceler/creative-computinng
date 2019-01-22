@@ -7,10 +7,41 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./scripts/gen_validatorv31.js"></script>
   </head>
   <body data-gr-c-s-loaded="true">
 
-    <div id="ref"><img src="jukebox-master-sketch.svg" alt="reference"></div>
+<center>
+    <div class="container over-container">
+      <div class="pop-tou show-pop-tou">
+        <div class="pop-content">
+          <div class="pop-header">terms of use</div>
+          <center>
+            <div class="ikigai"></div>
+          </center>
+            <div class="pop-tou-txt">
+              hoi sup
+              <br>
+              <span class="tou-text-light">
+                real ata la muerte brrrr
+              </span>
+                <form method="post" name="contact_form"
+  action="emailform.php">
+      Your Name:
+      <input type="text" name="name">
+      <!-- Email Address: -->
+      <!-- <input type="text" name="email"> -->
+      Message:
+      <textarea name="message"></textarea>
+      <input type="submit" value="Submit">
+  </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </center>
+
+    <!-- <div id="ref"><img src="jukebox-master-sketch.svg" alt="reference"></div> -->
     <div id="yucabody"><img src="jukebox-body-sketch.svg" alt="body"></div>
     <div id="vidframe"></div>
     <div id="coinbutton"><img src="jukebox-button-sketch.png" alt title="START"></div>
@@ -32,15 +63,39 @@
     <div id="b16"><img src="jukebox-button-sketch.png" alt title="Re:Re: - Asian Kung-fu Generation"></div>
     <div id="b17"><img src="jukebox-button-sketch.png" alt title="デビルマンの歌 - Kensuke Ushio"></div>
     <div id="b18"><img src="jukebox-button-sketch.png" alt title="かなしい、うれしい - Frederic"></div>
+    <div id="b19"><img src="jukebox-button-sketch.png" alt title="Megalo Box OST"></div>
+    <div id="b20"><img src="jukebox-button-sketch.png" alt title="scaPEGoat - SawanoHiroyuki[nZk]:Yosh"></div>
+    <div id="b21"><img src="jukebox-button-sketch.png" alt title="Upside Down - SHE'S"></div>
+    <div id="b22"><img src="jukebox-button-sketch.png" alt title="found & lost - Survive Said The Prophet"></div>
+    <div id="b23"><img src="jukebox-button-sketch.png" alt title="Devilman Crybaby raps"></div>
+    <div id="b24"><img src="jukebox-button-sketch.png" alt title="Nightmare - Masahiro Ikumi"></div>
+    <div id="b25"><img src="jukebox-button-sketch.png" alt title="HALF - Ziyoou-vachi"></div>
+    <div id="b26"><img src="jukebox-button-sketch.png" alt title="Kiss of Death - Nakashima Mika ft. HYDE"></div>
+    <div id="b27"><img src="jukebox-button-sketch.png" alt title="残酷な天使のテーゼ - Takahashi Yoko"></div>
+    <div id="b28"><img src="jukebox-button-sketch.png" alt title="かかってこいよ - NakamuraEmi"></div>
+    <div id="b29"><img src="jukebox-button-sketch.png" alt title="We are sorry, the current spot is taken by REGGAETON"></div>
+    <div id="b30"><img src="jukebox-button-sketch.png" alt title="We are sorry, the current spot is taken by REGGAETON"></div>
+    <div id="b31"><img src="jukebox-button-sketch.png" alt title="We are sorry, the current spot is taken by REGGAETON"></div>
+    <div id="b32"><img src="jukebox-button-sketch.png" alt title="We are sorry, the current spot is taken by REGGAETON"></div>
+    <div id="b33"><img src="jukebox-button-sketch.png" alt title="We are sorry, the current spot is taken by REGGAETON"></div>
+    <div id="b34"><img src="jukebox-button-sketch.png" alt title="We are sorry, the current spot is taken by REGGAETON"></div>
+    <div id="b35"><img src="jukebox-button-sketch.png" alt title="We are sorry, the current spot is taken by REGGAETON"></div>
+    <div id="b36"><img src="jukebox-button-sketch.png" alt title="We are sorry, the current spot is taken by REGGAETON"></div>
 
   </body>
-  <script>
-    $ ("document").ready(function(){
+  <script language="JavaScript">
+    $ ("document").ready(function(/scripts/gen_validatorv31.js){
 
     $( function() {
         $( "#vidframe" ).draggable();
       } );
 
       })
+
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name");
+// frmvalidator.addValidation("email","req","Please provide your email");
+frmvalidator.addValidation("email","email",
+  "Please enter a valid email address");
       </script>
 </html>
