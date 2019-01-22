@@ -22,7 +22,7 @@ if( empty($errors))
     $txt = "Song rec: ".$message.
 
     mail($mailTo, $txt, $headers);
-    header("Location: localhost/melodianouta.php?mailsend")
+    header("Location: localhost/melodianouta.php")
 // $to = $myemail;
 // $email_subject = "Contact form submission: $name";
 // $email_body = "You have received a new message. ".
