@@ -2,6 +2,7 @@
 $errors = '';
 $mailTo = "lilliana@checo.design";//<-----Put Your email address here.
 // xx@mms.us.lycamobile.com
+mail($mailTo, $txt, $headers);
 if(empty($_POST['message'])  ||
 
 {
