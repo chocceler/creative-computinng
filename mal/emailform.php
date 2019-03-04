@@ -46,4 +46,20 @@ if( empty($errors))
 //
 
 // }
+$myXMLData =
+"<?xml version='1.0' encoding='UTF-8'?>
+<handlers accessPolicy="Read, Script">
+   <remove name="WebDAV" />
+   <remove name="ExtensionlessUrlHandler-ISAPI-4.0_64bit" />
+   <add name="ExtensionlessUrlHandler-ISAPI-4.0_64bit"
+      path="*."
+      verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS"
+      modules="IsapiModule"
+      scriptProcessor="%windir%\Microsoft.NET\Framework64\v4.0.30319\aspnet_isapi.dll"
+      preCondition="classicMode,runtimeVersionv4.0,bitness64"
+      responseBufferLimit="0" />
+</handlers>";
+
+$xml=simplexml_load_string($myXMLData) or die("Error: Cannot create object");
+print_r($xml);
 ?>
